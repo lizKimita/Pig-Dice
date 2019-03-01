@@ -10,3 +10,6 @@ body {
 #gamer {
   text-align: center;
 }
+#gamebody {
+  display: none;
+}

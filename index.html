@@ -11,8 +11,6 @@
   <body>
     <div class="container">
       <div class="well">
-
-
       <div class="jumbotron">
         <h2>Ever heard of the Pig Dice game?</h2>
         <h3>Brace yourself to have some fun!</h3>
@@ -27,11 +25,10 @@
               <br>
               <button type="submit" class="btn btn-warning">Get Started!</button>
             </div>
-
           </form>
         </div>
       </div>
-
+      <div id="gamebody">
       <h1>Pig Dice</h1>
         <h2>Rules of the game!</h2>
         <p>Number of players required to play the game: 2</p>
@@ -49,17 +46,32 @@
         <button type="submit" class="btn btn-info">Let's PLay!</button>
         <br>
         <div id="gamer">
-
-        <img src="images/glowing dice.gif" id="glowing">
-
+        <img src="images/glowing dice2" id="glowing">
+        <br>
+        <br>
         <div class="row">
-          <div class="col-md-6">
-
+          <div class="col-md-4">
             <p>PLAYER 1</p>
+            <br>
+              <div class="totalScore"></div>
+              <br>
+              <div class="turnScore"></div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-4">
+            <button type="submit" class="btn btn-danger" id ="roll"> Roll Dice!</button>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-warning" id ="Hold"> Hold!</button>
+          </div>
+          <div class="col-md-4">
             <p>PLAYER 2</p>
+            <br>
+            <div class="totalScore"></div>
+            <br>
+            <div class="turnScore"></div>
+
           </div>
+        </div>
         </div>
         </div>
         </div>
