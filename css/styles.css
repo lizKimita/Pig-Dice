@@ -1,0 +1,12 @@
+body {
+  background-image: url("../images/dice1.jpeg");
+}
+.jumbotron {
+
+}
+#glowing {
+  width: 250px;
+}
+#gamer {
+  text-align: center;
+}
