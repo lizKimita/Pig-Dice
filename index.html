@@ -12,13 +12,15 @@
     <div class="container">
       <div class="well">
       <div class="jumbotron">
-        <h2>Ever heard of the Pig Dice game?</h2>
+        <div id="header">
+        <h2><strong>Ever heard of the Pig Dice game?</strong></h2>
         <h3>Brace yourself to have some fun!</h3>
         <p>Just follow through to have an amazing time! To start you and your partner should fill in your details below!</p>
+        </div>
         <div class="Register">
           <form id="players">
             <div class="form-group">
-              <label for="player1"> Player 1</label>
+              <label for="player1">Player 1</label>
               <input id="player1" class="form-control" type="text"required>
               <label for="player2">Player 2</label>
               <input id="player2" class="form-control" type="text"required>
@@ -28,9 +30,14 @@
           </form>
         </div>
       </div>
+      <br>
       <div id="gamebody">
-      <h1>Pig Dice</h1>
+
+      <h1><strong>Pig Dice</strong></h1>
         <h2>Rules of the game!</h2>
+        <div class="midbody">
+
+
         <p>Number of players required to play the game: 2</p>
         <ul>
           <li>For each player's round, one can roll the die as many times as they want.</li>
@@ -41,9 +48,8 @@
           <li>THe first player to reach a total of 100 points wins the game and the game ends.</li>
         </ul>
         <br>
-        <p>Ready to Play? Click the button below!</p>
-        <br>
-        <button type="submit" class="btn btn-info">Let's PLay!</button>
+        <p>Ready to Play?</p>
+        </div>
         <br>
         <div id="gamer">
         <img src="images/glowing dice2" id="glowing">
@@ -51,7 +57,7 @@
         <br>
         <div class="row">
           <div class="col-md-4">
-            <p>PLAYER 1</p>
+            <p><strong>PLAYER 1</strong></p>
             <br>
               <div class="totalScore"></div>
               <br>
@@ -64,7 +70,7 @@
             <button type="submit" class="btn btn-warning" id ="Hold"> Hold!</button>
           </div>
           <div class="col-md-4">
-            <p>PLAYER 2</p>
+            <p><strong>PLAYER 2</strong></p>
             <br>
             <div class="totalScore"></div>
             <br>

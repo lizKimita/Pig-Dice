@@ -2,7 +2,7 @@ body {
   background-image: url("../images/dice1.jpeg");
 }
 .jumbotron {
-
+  background-color: skyblue;
 }
 #glowing {
   width: 250px;
@@ -12,4 +12,13 @@ body {
 }
 #gamebody {
   display: none;
+}
+#header {
+  text-align: center;
+}
+h1 {
+  text-align: center;
+}
+.midbody {
+  font-size: 17px;
 }
