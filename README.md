@@ -17,20 +17,12 @@ The pig dice game can best be explained using its rules:
 * They can the start playing and the results for each round and the total will show up.
 
 ##Program Specifications
-|      Game Rules                | Input (Rolled Amount)|       Output               |
-| :----------------------------: | :------------------: | :------------------------: |
-|User1 rolls dice                |         5            |     Rolled Amount = 5      |
-|                                |                      |     Cumulative Score = 5   |
-|                                |                      |     Total Score = 5        |
-|User decides to continue and    |         6            |     Rolled Amount= 6       |
-|rolls 6                         |                      |     Cumulative Score = 11  |
-|                                |                      |     Total Score = 17       |
-|User continues and rolls a 1    |         1            |     Rolled Amount = 1      |
-|                                |                      |     Cumulative Score = 0   |
-|                                |                      |     Total Score = 0        |
-|First User to get 100 points    |       WINNER         |      Cumulative Score= 100 |                  
-|                                |                      |      Total Score = 100     |
-
+|    Input             | Cumulative Score     |     Total Score         |
+|:--------------------:|:--------------------:|:-----------------------:|
+|    5,2,6,hold        |     13               |        13               |
+|    6, hold           |     6                |        19               |
+|    4,2,5,7,8,hold    |     26               |        45               |
+|    3,4,1             |     0                |         0               |
 
 ## Known Bugs
 There are currently no known bugs.
