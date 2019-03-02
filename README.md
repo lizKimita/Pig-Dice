@@ -1,6 +1,8 @@
 # Pig Dice
 #### This is a very enjoyable dice game. For the game to work, there must be two players. They each take turns to roll the dice and the first person to get to 100 points is declared the winner, 02nd, March 2019.
+
 #### By **Elizabeth Wanjiku Kimita**
+
 ## Description
 The pig dice game can best be explained using its rules:
 * For each player's round, one can roll the die as many times as they want.
@@ -12,17 +14,18 @@ The pig dice game can best be explained using its rules:
 
 ## Setup/Installation Requirements
 * The user requires an Internet connection to log into the website.
-* After logging into the Pig Dice site, both players are required to enter their names to start the game
-* The players should then come across a set of rules for the game, they should go through them so as to understand how to play and what to expect from the game.
-* They can the start playing and the results for each round and the total will show up.
+* After logging into the Pig Dice site, both players are required to enter their names to start the game.
+* The players should then come across a set of rules to follow, they should go through them so as to understand how to play and what to expect from the game.
+* They can then start playing and the results for each round and the total will be displayed.
 
-##Program Specifications
-|    Input             | Cumulative Score     |     Total Score         |
-|:--------------------:|:--------------------:|:-----------------------:|
-|    5,2,6,hold        |     13               |        13               |
-|    6, hold           |     6                |        19               |
-|    4,2,5,7,8,hold    |     26               |        45               |
-|    3,4,1             |     0                |         0               |
+## Program Specifications
+
+|    Input/ Dice Roll  |   Cumulative Score   |     Total Score         |
+|  :----------------:  | :------------------: |  :-------------------:  |
+|   5, 2, 6,hold       |     13               |        13               |
+|   6, hold            |     6                |        19               |
+|   4, 2, 5, 7, 8,hold |     26               |        45               |
+|   3, 4, 1            |     0                |         0               |
 
 ## Known Bugs
 There are currently no known bugs.
@@ -32,5 +35,6 @@ This program has been built using HTML to write the content, CSS for styling pur
 
 ## Support and contact details
 For more information, questions, or help using the program, get in touch with me on +254 726 047102 or email: kimita.wanjiku@gmail.com.
+
 ### License
 MIT Copyright (c) 2019 Elizabeth Wanjiku Kimita
