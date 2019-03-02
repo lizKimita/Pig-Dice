@@ -35,6 +35,16 @@ $(document).ready(function(){
     $("#dieScore2").text(this.dieScore);
     score2(this.dieScore)
 });
+  $("#reset").click(function(){
+    $("#dieScore1").empty();
+    $("#dieScore2").empty();
+    $("#comment").empty();
+    $("#comment2").empty();
+    $("#turnScore1").empty();
+    $("#turnScore2").empty();
+    $("#totalScore1").empty();
+    $("#totalScore2").empty();
+  });
 
   $("#Hold1").click(function(){
     $(document.getElementById("Hold1").disabled = true);
@@ -62,8 +72,6 @@ function score1 (ans) {
     $(document.getElementById("roll1").disabled = true);
     $(document.getElementById("roll2").disabled = false);
     $(document.getElementById("Hold2").disabled = false);
-    $("#turnScore1").clear();
-    $("#totalScore1").clear();
     }
     else {
     $("#comment") .text("You rolled " + ans + ". Play again or hold!");
@@ -76,8 +84,6 @@ function score1 (ans) {
       $(document.getElementById("roll2").disabled = true);
       $(document.getElementById("roll1").disabled = false);
       $(document.getElementById("Hold1").disabled = false);
-      $("#turnScore2").clear();
-      $("#totalScore2").clear();
       }
       else {
       $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
