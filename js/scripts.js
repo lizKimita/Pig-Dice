@@ -1,5 +1,4 @@
 //USER INTERFACE (FRONT-END);
-
 function RollDice(name, score1, score2, score3) {
   this.playerName = name;
   this.dieScore = score1;
@@ -22,19 +21,20 @@ $(document).ready(function(){
 
     player1 = new RollDice;
     player2 = new RollDice;
-
   });
+
   $("#roll1").click(function() {
     this.dieScore = rollDice();
     $("#dieScore1").text(this.dieScore);
     score1(this.dieScore);
-
   });
+
   $("#roll2").click(function(){
     this.dieScore = rollDice();
     $("#dieScore2").text(this.dieScore);
     score2(this.dieScore)
 });
+
   $("#reset").click(function(){
     $(document.getElementById("Hold1").disabled = false);
     $(document.getElementById("roll1").disabled = false);
@@ -72,24 +72,24 @@ function rollDice(){
 
 function score1 (ans) {
     if (ans === 1) {
-    $("#comment") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
-    $(document.getElementById("roll1").disabled = true);
-    $(document.getElementById("roll2").disabled = false);
-    $(document.getElementById("Hold2").disabled = false);
+      $("#comment") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
+      $(document.getElementById("roll1").disabled = true);
+      $(document.getElementById("roll2").disabled = false);
+      $(document.getElementById("Hold2").disabled = false);
     }
     else {
-    $("#comment") .text("You rolled " + ans + ". Play again or hold!");
+      $("#comment") .text("You rolled " + ans + ". Play again or hold!");
     }
   };
 
   function score2 (ans2) {
       if (ans2 === 1) {
-      $("#comment2") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
-      $(document.getElementById("roll2").disabled = true);
-      $(document.getElementById("roll1").disabled = false);
-      $(document.getElementById("Hold1").disabled = false);
+        $("#comment2") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
+        $(document.getElementById("roll2").disabled = true);
+        $(document.getElementById("roll1").disabled = false);
+        $(document.getElementById("Hold1").disabled = false);
       }
       else {
-      $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
+        $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
       }
     };
