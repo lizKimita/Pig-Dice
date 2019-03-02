@@ -23,3 +23,13 @@ h1 {
 .midbody {
   font-size: 17px;
 }
+#first {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline;
+}
+#second {
+  font-weight: bold;
+  font-size: 20px;
+  text-decoration: underline
+}
