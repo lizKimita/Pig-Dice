@@ -36,6 +36,10 @@ $(document).ready(function(){
     score2(this.dieScore)
 });
   $("#reset").click(function(){
+    $(document.getElementById("Hold1").disabled = false);
+    $(document.getElementById("roll1").disabled = false);
+    $(document.getElementById("Hold2").disabled = false);
+    $(document.getElementById("roll2").disabled = false);
     $("#dieScore1").empty();
     $("#dieScore2").empty();
     $("#comment").empty();

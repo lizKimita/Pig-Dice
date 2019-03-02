@@ -1,9 +1,9 @@
 body {
-  background-image: url("../images/dice1.jpeg");
+  background-image: url("../images/images4.jpg");
 }
 .jumbotron {
-  background-color: skyblue;
-
+  background-image: url("../images/bouncing.gif");
+  background-image: repeating-linear-gradient();
 }
 #glowing {
   width: 250px;
@@ -19,6 +19,7 @@ body {
 }
 h1 {
   text-align: center;
+  text-decoration: underline;
 }
 .midbody {
   font-size: 17px;
