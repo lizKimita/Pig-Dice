@@ -18,24 +18,24 @@ The pig dice game can best be explained using its rules:
 
 ##Program Specifications
 |      Game Rules                | Input (Rolled Amount)|       Output               |
-| %----------------------------% | %------------------% | %------------------------% |
-|User1 rolls dice                |         5            |     Rolled Amount = 5      |                                 |
+| :----------------------------: | :------------------: | :------------------------: |
+|User1 rolls dice                |         5            |     Rolled Amount = 5      |
 |                                |                      |     Cumulative Score = 5   |
 |                                |                      |     Total Score = 5        |
-|--------------------------------|----------------------|----------------------------|
+|                                |                      |                            |
 |User decides to continue and    |         6            |     Rolled Amount= 6       |
 |rolls 6                         |                      |     Cumulative Score = 11  |
 |                                |                      |     Total Score = 17       |
-|--------------------------------|----------------------|----------------------------|
+|                                |                      |                            |
 |                                |                      |                            |
 |User continues and rolls a 1    |         1            |     Rolled Amount = 1      |
 |                                |                      |     Cumulative Score = 0   |
 |                                |                      |     Total Score = 0        |
-|--------------------------------|----------------------|----------------------------|
 |                                |                      |                            |
-|First User to get 100 points    |       WINNER         |      Cumulative Score= 100 |        |          
+|                                |                      |                            |
+|First User to get 100 points    |       WINNER         |      Cumulative Score= 100 |                  
 |                                |                      |      Total Score = 100     |
-|--------------------------------|----------------------|----------------------------|
+|                                |                      |                            |
 
 
 ## Known Bugs
