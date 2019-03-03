@@ -37,3 +37,7 @@ h1 {
 #reset {
   text-align: center;
 }
+.ready {
+  font-size: 25px;
+  text-decoration: underline;
+}

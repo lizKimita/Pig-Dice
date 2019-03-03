@@ -1,5 +1,5 @@
 //USER INTERFACE (FRONT-END);
-function RollDice(name, score1, score2, score3) {
+function Player(name, score1, score2, score3) {
   this.playerName = name;
   this.dieScore = score1;
   this.turnScore = score2;
@@ -19,14 +19,20 @@ $(document).ready(function(){
     $("#first").text("Hello "+ player1Name);
     $("#second").text("Hello "+ player2Name);
 
-    player1 = new RollDice;
-    player2 = new RollDice;
   });
 
   $("#roll1").click(function() {
     this.dieScore = rollDice();
     $("#dieScore1").text(this.dieScore);
     score1(this.dieScore);
+
+    var turnTotal = 0;
+    var turns = document.getElementById('dieScore1');
+    for (var i=0; i<=turns.length; i++)  {
+      turnTotal =+ turns[i];
+      $("#turnScore1").text(turnTotal);
+    };
+
   });
 
   $("#roll2").click(function(){
