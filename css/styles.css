@@ -41,3 +41,9 @@ h1 {
   font-size: 25px;
   text-decoration: underline;
 }
+#font {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 70px;
+  color: teal;
+  font-weight:600;
+}
