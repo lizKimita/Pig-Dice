@@ -6,13 +6,13 @@ function Player(name, score1, score2, score3) {
   this.totalScore = score3;
 }
 
-var dieScore1 = 0;
-var turnScore1 = 0;
-var totalScore1 = 0;
+  var dieScore1 = 0;
+  var turnScore1 = 0;
+  var totalScore1 = 0;
 
-var dieScore2 = 0;
-var turnScore2 = 0;
-var totalScore2 = 0;
+  var dieScore2 = 0;
+  var turnScore2 = 0;
+  var totalScore2 = 0;
 
 function rollDice(){
   return (Math.floor(Math.random()*6)+1);
@@ -33,21 +33,20 @@ function score1 (ans) {
     }
   };
 
-  function score2 (ans2) {
-      if (ans2 === 1) {
-        $("#comment2") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
-        $(document.getElementById("roll2").disabled = true);
-        $(document.getElementById("roll1").disabled = false);
-        $(document.getElementById("Hold1").disabled = false);
-        $("#turnScore2").empty();
+function score2 (ans2) {
+    if (ans2 === 1) {
+      $("#comment2") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
+      $(document.getElementById("roll2").disabled = true);
+      $(document.getElementById("roll1").disabled = false);
+      $(document.getElementById("Hold1").disabled = false);
+      $("#turnScore2").empty();
         turnScore2= turnScore2*0;
-        $("#turnScore2").empty();
-      }
-      else {
-        $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
-      }
+      $("#turnScore2").empty();
+    }
+    else {
+      $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
+    }
     };
-
 
 //USER INTERFACE (FRONT-END);
 $(document).ready(function(){
@@ -58,7 +57,6 @@ $(document).ready(function(){
     var player2Name = $("input#player2").val();
     $("#first").text("Hello "+ player1Name);
     $("#second").text("Hello "+ player2Name);
-
   });
 
   $("#roll1").click(function() {
@@ -94,6 +92,8 @@ $(document).ready(function(){
     $("#turnScore2").empty();
     $("#totalScore1").empty();
     $("#totalScore2").empty();
+    $("#congrats").fadeOut();
+    $("#glowing").fadeIn();
   });
 
   $("#Hold1").click(function(){
@@ -104,9 +104,10 @@ $(document).ready(function(){
     totalScore1 += turnScore1;
     turnScore1 -= turnScore1;
     $("#totalScore1").text(totalScore1);
-    
+
     if (totalScore1 >= 100) {
-      alert ("Congratulations!!! You won the game! Game over! To play again click the NEW GAME button!");
+      $("#congrats").fadeIn();
+      $("#glowing").fadeOut();
       $(document.getElementById("Hold2").disabled = true);
       $(document.getElementById("roll2").disabled = true);
       $(document.getElementById("Hold1").disabled = true);
@@ -122,5 +123,14 @@ $(document).ready(function(){
     totalScore2 += turnScore2;
     turnScore2 -= turnScore2;
     $("#totalScore2").text(totalScore2);
+
+    if (totalScore2 >= 100) {
+      $("#congrats").fadeIn();
+      $("#glowing").fadeOut();
+      $(document.getElementById("Hold2").disabled = true);
+      $(document.getElementById("roll2").disabled = true);
+      $(document.getElementById("Hold1").disabled = true);
+      $(document.getElementById("roll1").disabled = true);
+    }
   });
 });
