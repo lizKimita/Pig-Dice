@@ -65,6 +65,8 @@ $(document).ready(function(){
     $(document.getElementById("roll1").disabled = true);
     $(document.getElementById("Hold2").disabled = false);
     $(document.getElementById("roll2").disabled = false);
+    totalScore1 += turnScore1;
+    $("#totalScore1").text(totalScore1);
   });
 
   $("#Hold2").click(function(){
@@ -72,6 +74,8 @@ $(document).ready(function(){
     $(document.getElementById("roll2").disabled = true);
     $(document.getElementById("Hold1").disabled = false);
     $(document.getElementById("roll1").disabled = false);
+    totalScore2 += turnScore2;
+    $("#totalScore2").text(totalScore2);
   });
 });
 
@@ -82,10 +86,13 @@ function rollDice(){
 
 function score1 (ans) {
     if (ans === 1) {
-      $("#comment") .text("Oh no! You just rolled a 1, Your total score goes back to zero!");
+      $("#comment") .text("Oh no! You just rolled a 1, Your total turnscore goes back to zero!");
       $(document.getElementById("roll1").disabled = true);
       $(document.getElementById("roll2").disabled = false);
       $(document.getElementById("Hold2").disabled = false);
+      $(("#turnScore1")*0);
+      $("#dieScore1").empty();
+
     }
     else {
       $("#comment") .text("You rolled " + ans + ". Play again or hold!");
@@ -98,6 +105,7 @@ function score1 (ans) {
         $(document.getElementById("roll2").disabled = true);
         $(document.getElementById("roll1").disabled = false);
         $(document.getElementById("Hold1").disabled = false);
+        $("#turnScore2").empty();
       }
       else {
         $("#comment2") .text("You rolled " + ans2 + ". Play again or hold!");
