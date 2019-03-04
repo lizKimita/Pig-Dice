@@ -66,6 +66,7 @@ $(document).ready(function(){
     $(document.getElementById("Hold2").disabled = false);
     $(document.getElementById("roll2").disabled = false);
     totalScore1 += turnScore1;
+    turnScore1 -= turnScore1;
     $("#totalScore1").text(totalScore1);
   });
 
@@ -75,6 +76,7 @@ $(document).ready(function(){
     $(document.getElementById("Hold1").disabled = false);
     $(document.getElementById("roll1").disabled = false);
     totalScore2 += turnScore2;
+    turnScore2 -= turnScore2;
     $("#totalScore2").text(totalScore2);
   });
 });
@@ -90,8 +92,8 @@ function score1 (ans) {
       $(document.getElementById("roll1").disabled = true);
       $(document.getElementById("roll2").disabled = false);
       $(document.getElementById("Hold2").disabled = false);
-      $(("#turnScore1")*0);
-      $("#dieScore1").empty();
+      turnScore1= turnScore1*0;
+      $("#turnScore1").empty();
 
     }
     else {
@@ -105,6 +107,8 @@ function score1 (ans) {
         $(document.getElementById("roll2").disabled = true);
         $(document.getElementById("roll1").disabled = false);
         $(document.getElementById("Hold1").disabled = false);
+        $("#turnScore2").empty();
+        turnScore2= turnScore2*0;
         $("#turnScore2").empty();
       }
       else {
