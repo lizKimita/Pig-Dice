@@ -6,6 +6,14 @@ function Player(name, score1, score2, score3) {
   this.totalScore = score3;
 }
 
+var dieScore1 = 0;
+var turnScore1 = 0;
+var totalScore1 = 0;
+
+var dieScore2 = 0;
+var turnScore2 = 0;
+var totalScore2 = 0;
+
 function rollDice(){
   return (Math.floor(Math.random()*6)+1);
 }
@@ -22,23 +30,19 @@ $(document).ready(function(){
   });
 
   $("#roll1").click(function() {
-    this.dieScore = rollDice();
-    $("#dieScore1").text(this.dieScore);
-    score1(this.dieScore);
-
-    var turnTotal = 0;
-    var turns = document.getElementById('dieScore1');
-    for (var i=0; i<=turns.length; i++)  {
-      turnTotal =+ turns[i];
-      $("#turnScore1").text(turnTotal);
-    };
-
+    dieScore1= rollDice();
+    turnScore1 += dieScore1;
+    $("#dieScore1").text(dieScore1);
+    $("#turnScore1").text(turnScore1);
+    score1(dieScore1);
   });
 
   $("#roll2").click(function(){
-    this.dieScore = rollDice();
-    $("#dieScore2").text(this.dieScore);
-    score2(this.dieScore)
+    dieScore2 = rollDice();
+    turnScore2 += dieScore2;
+    $("#dieScore2").text(dieScore2);
+    $("#turnScore2").text(turnScore2);
+    score2(dieScore2)
 });
 
   $("#reset").click(function(){
